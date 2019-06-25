@@ -1,0 +1,8 @@
+class Solution(object):
+    def titleToNumber(self, s):
+          Number = 26
+          sum = 0
+          for i in s:
+              sum = Number * sum + (ord(i) - ord("A") + 1)
+
+          return sum
